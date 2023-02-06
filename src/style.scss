@@ -1,0 +1,27 @@
+@import './pages';
+@import './styles';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #1E1E1E;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    @extend %centeringBlock
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 13px;
+}
