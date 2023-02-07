@@ -2,43 +2,39 @@
     height: 100%;
     display: flex;
     &__info {
-        margin: 60px auto 109px auto;
+        margin: 60px auto 109px;
         width: 510px;
     }
-    &__infoFields {
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    &__infoFields,
+    &__links,
+    &__passwords {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 60px;
         *:last-child {
             border-bottom: none;
         }
     }
+    &__infoFields {
+        margin-bottom: 60px;
+    }
+    &__passwords {
+        margin-bottom: 162px;
+        margin-top: 97px;
+    }
     &__links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
         div {
             padding-bottom: 10px;
             border-bottom: 1px solid #EAEAEA;
         }
-        *:last-child {
-            border-bottom: none;
-        }
     }
-}
-
-.avatar {
-    margin: 0 auto 60px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 21;
-    align-items: center;
-    font-weight: 600;
-    &__img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        background-color: #EFEFEF;
+    &__saveButton {
+        width: 280px;
+        margin: 0 auto;
     }
 }

@@ -1,9 +1,8 @@
 <main class="profilePage">
     {{>PrevLink}}
     <div class="profilePage__info">
-        <div class="avatar">
-            <div class="avatar__img"></div>
-            <h2>Иван</h2>
+        <div class="profilePage__avatar">
+            {{>ChangeAvatar title="Иван"}}
         </div>
         <div class="profilePage__infoFields">
             {{>InfoField label="Почта" value="pochta@yandex.ru" }}

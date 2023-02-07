@@ -1,0 +1,15 @@
+.profileData {
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        *:last-child {
+            border-bottom: none;
+        }
+        margin-bottom: 60px;
+    }
+    &__saveButton {
+        width: 280px;
+        margin: 0 auto;
+    }
+}
