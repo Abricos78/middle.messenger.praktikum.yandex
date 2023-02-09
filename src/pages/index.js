@@ -4,6 +4,7 @@ import SigninPage from './Auth/Signin.hbs';
 import ProfilePage from './Profile/Profile.hbs';
 import ProfileDataPage from './Profile/ProfileData.hbs';
 import ProfilePasswordPage from './Profile/ProfilePassword.hbs';
+import MainPage from './Main/Main.hbs';
 
 export {
     ErrorPage,
@@ -12,4 +13,5 @@ export {
     ProfilePage,
     ProfileDataPage,
     ProfilePasswordPage,
+    MainPage,
 }

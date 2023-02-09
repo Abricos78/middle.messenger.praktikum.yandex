@@ -1,1 +1,10 @@
-<button type='button' class='button {{ type }}'>{{ content }}</button>
+
+{{#if src}}
+<button class="roundButton">
+    <img src="{{ src }}" alt="arrow">
+</button>
+{{else}}
+<button type='button' class='button'>
+    {{ content }}
+</button>
+{{/if}}

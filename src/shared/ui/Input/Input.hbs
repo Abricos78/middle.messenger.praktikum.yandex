@@ -1,10 +1,10 @@
 <div>
-    <label for={{ name }} class="input__label">{{ label }}</label>
+    <label for="{{ name }}" id="{{name}}" class="input__label">{{ label }}</label>
     <input
         class="input"
-        name={{ name }}
-        placeholder={{ placeholder }}
-        type={{ type }}
+        name="{{ name }}"
+        placeholder="{{ placeholder }}"
+        type="{{ type }}"
     >
-    <span class="input__error">{{ errorMessage }}</span>
+    {{>ErrorMessage error=errorMessage }}
 </div>

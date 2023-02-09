@@ -10,14 +10,6 @@
         font-size: 11px;
         color: #999;
     }
-    &__error {
-        font-size: 11px;
-        color: #FF2F2F;
-        display: none;
-        &.active {
-            display: inline;
-        }
-    }
     &[type='password'] {
         letter-spacing: 1.5px;
         font-size: 18px;
