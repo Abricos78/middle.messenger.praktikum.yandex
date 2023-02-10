@@ -1,4 +1,3 @@
-import app from './app/index.hbs';
 import * as pages from './pages'
 import './shared';
 import './features';
