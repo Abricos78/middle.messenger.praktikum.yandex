@@ -1,13 +1,5 @@
 import app from './app/index.hbs';
-import {
-    ErrorPage,
-    LoginPage,
-    SigninPage,
-    ProfilePage,
-    ProfileDataPage,
-    ProfilePasswordPage,
-    MainPage,
-} from './pages'
+import * as pages from './pages'
 import './shared';
 import './features';
 import './entities';
@@ -16,22 +8,32 @@ import avatarIcon from '../static/icons/Avatar.svg';
 import ArrowLeft from '../static/icons/ArrowLeft.svg';
 import ArrowRight from '../static/icons/ArrowRight.svg';
 
+const root = document.getElementById('root')
+const PAGES = {
+    ...pages,
+    ChangeAvatarPage: pages.ProfilePage,
+}
 const PROPS = {
-    ERROR: {
-        404: {
-            code: 404,
-            message: 'Не туда попали'
-        },
-        505: {
-            code: 505,
-            message: 'Мы уже фиксим'
-        }
+    404: {
+        code: 404,
+        message: 'Не туда попали'
+    },
+    505: {
+        code: 505,
+        message: 'Мы уже фиксим'
     },
     ProfilePage: {
         icons: {
             button: ArrowLeft,
             avatar: avatarIcon,
         }
+    },
+    ChangeAvatarPage: {
+        icons: {
+            button: ArrowLeft,
+            avatar: avatarIcon,
+        },
+        modal: 'active',
     },
     ProfileDataPage: {
         icons: {
@@ -52,14 +54,9 @@ const PROPS = {
     }
 }
 
-const render = () => {
-    const html = MainPage({
-        icons: {
-            button: ArrowRight,
-        }
-    })
-    const root = document.getElementById('root')
+window.render = (pageName, propsName) => {
+    const html = PAGES[pageName](PROPS[propsName || pageName])
     root.innerHTML = html
 }
 
-window.addEventListener('DOMContentLoaded', render)
+window.addEventListener('DOMContentLoaded', () => window.render('LoginPage'))

@@ -1,0 +1,31 @@
+.navigationPages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px 0 0;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    border: 2px solid #3369F3;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    color: #3369F3;
+    z-index: 2;
+    cursor: default;
+    background-color: #FFF;
+    &__title {
+        margin-bottom: 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &:hover {
+        height: 240px;
+        transition: .8s;
+    }
+}

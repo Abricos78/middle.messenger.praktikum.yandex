@@ -1,0 +1,14 @@
+<nav class="navigationPages">
+    <div class="navigationPages__title">Navigation</div>
+    <div class="navigationPages__content">
+        {{>Link content="Login page" onclick="window.render('LoginPage')"}}
+        {{>Link content="Signin page" onclick="window.render('SigninPage')"}}
+        {{>Link content=" Main page" onclick="window.render('MainPage')"}}
+        {{>Link content="Profile page" onclick="window.render('ProfilePage')"}}
+        {{>Link content="Profile page (modal)" onclick="window.render('ChangeAvatarPage')"}}
+        {{>Link content="Profile data page" onclick="window.render('ProfileDataPage')"}}
+        {{>Link content="Profile password page" onclick="window.render('ProfilePasswordPage')"}}
+        {{>Link content="404" onclick="window.render('ErrorPage', 404)"}}
+        {{>Link content="505" onclick="window.render('ErrorPage', 505)"}}
+    </div>
+</nav>

@@ -2,7 +2,7 @@
     {{>PrevLink src=icons.button}}
     <div class="profilePage__info">
         <div class="profilePage__changeAvatar">
-            {{>ChangeAvatar title="Иван" avatarIcon=icons.avatar}}
+            {{>ChangeAvatar title="Иван" avatarIcon=icons.avatar showModal=modal}}
         </div>
         <div class="profilePage__infoFields">
             {{>InfoField label="Почта" value="pochta@yandex.ru" }}
@@ -14,13 +14,13 @@
         </div>
         <div class="profilePage__links">
             <div>
-                {{>Link href="#" content="Изменить данные" }}
+                {{>Link content="Изменить данные" }}
             </div>
             <div>
-                {{>Link href="#" content="Изменить пароль" }}
+                {{>Link content="Изменить пароль" }}
             </div>
             <div>
-                {{>Link href="#" content="Выйти" color="red" }}
+                {{>Link content="Выйти" color="red" }}
             </div>
         </div>
     </div>
