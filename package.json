@@ -1,0 +1,30 @@
+{
+    "name": "middle.messenger.praktikum.yandex",
+    "version": "1.0.0",
+    "description": "---",
+    "source": "static/index.html",
+    "scripts": {
+        "start": "npm run build && node server.js",
+        "dev": "parcel --open -p 3000 --no-cache",
+        "build": "parcel build --no-cache --no-source-maps"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Abricos78/middle.messenger.praktikum.yandex.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Abricos78/middle.messenger.praktikum.yandex/issues"
+    },
+    "homepage": "https://github.com/Abricos78/middle.messenger.praktikum.yandex#readme",
+    "devDependencies": {
+        "@anikin/parcel-transformer-handlebars-precompile": "1.0.1",
+        "@parcel/transformer-sass": "2.8.3",
+        "express": "4.18.2",
+        "handlebars": "4.7.7",
+        "parcel": "2.8.3",
+        "parcel-plugin-clean-dist": "0.0.6"
+    }
+}

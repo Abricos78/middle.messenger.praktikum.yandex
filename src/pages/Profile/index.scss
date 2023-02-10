@@ -1,0 +1,45 @@
+.profilePage {
+    height: 100%;
+    display: flex;
+    &__info {
+        margin: 60px auto 109px;
+        width: 510px;
+    }
+    &__changeAvatar,
+    &__avatar {
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    &__avatar {
+        height: 130px;
+    }
+    &__infoFields,
+    &__links,
+    &__passwords {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        *:last-child {
+            border-bottom: none;
+        }
+    }
+    &__infoFields {
+        margin-bottom: 60px;
+    }
+    &__passwords {
+        margin-bottom: 162px;
+        margin-top: 97px;
+    }
+    &__links {
+        div {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #EAEAEA;
+        }
+    }
+    &__saveButton {
+        width: 280px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,11 @@
+.infoField {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EAEAEA;
+    font-size: 14px;
+    &__value {
+        color: #999999;
+        text-align: end;
+    }
+}
