@@ -1,20 +1,20 @@
-@import './pages';
-@import './styles';
+@import "./pages";
+@import "./styles";
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
+.body {
+    font-family: "Inter", sans-serif;
 }
 
 #root {
-    color: #1E1E1E;
+    color: $black;
     height: 100vh;
 }
 
 .container {
-    @extend %centeringBlock
+    @extend %centeringBlock;
 }
 
 h1 {

@@ -1,7 +1,8 @@
+@import '/src/styles/variables.scss';
 .chats {
     height: 100%;
     width: 310px;
     background-color: #FBFBFB;
-    border-right: 1px solid #EAEAEA;
+    border-right: 1px solid $light-grey;
     padding: 21px 10px 10px 10px;
 }
