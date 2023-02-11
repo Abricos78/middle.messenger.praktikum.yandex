@@ -53,8 +53,8 @@ const PROPS = {
     },
 };
 
-window.render = (pageName, propsName) => {
-    const html = PAGES[pageName](PROPS[propsName || pageName]);
+window.render = (pageName, propsName = pageName) => {
+    const html = PAGES[pageName](PROPS[propsName]);
     root.innerHTML = html;
 };
 

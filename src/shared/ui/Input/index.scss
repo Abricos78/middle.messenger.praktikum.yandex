@@ -1,14 +1,15 @@
+@import '/src/styles/variables.scss';
 .input {
-    border-bottom: 1px solid #3369f3;
+    border-bottom: 1px solid $blue;
     width: 100%;
     height: 34px;
     padding: 8px 0 7px 0;
-    color: #1e1e1e;
+    color: $black;
     font-size: 16px;
     margin-bottom: 7px;
     &__label {
         font-size: 11px;
-        color: #999;
+        color: $grey;
     }
     &[type="password"] {
         letter-spacing: 1.5px;

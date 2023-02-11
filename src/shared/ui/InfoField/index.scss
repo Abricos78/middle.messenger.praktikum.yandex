@@ -1,11 +1,12 @@
+@import '/src/styles/variables.scss';
 .infoField {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid $light-grey;
     font-size: 14px;
     &__value {
-        color: #999999;
+        color: $grey;
         text-align: end;
     }
 }
