@@ -1,9 +1,9 @@
 {{#if src}}
-    <button class="roundButton">
+    <button class="button" data-type="round">
         <img src="{{src}}" alt="arrow" />
     </button>
 {{else}}
-    <button type="button" class="button">
+    <button class="button" data-type="default">
         {{content}}
     </button>
 {{/if}}

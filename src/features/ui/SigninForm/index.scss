@@ -1,3 +1,4 @@
+@import '/src/styles';
 .signin {
     &__title {
         margin-bottom: 40px;
@@ -10,9 +11,8 @@
         margin-bottom: 62px;
     }
     &__footer {
-        display: flex;
+        @extend %centerBlock;
         flex-direction: column;
         gap: 14px;
-        text-align: center;
     }
 }

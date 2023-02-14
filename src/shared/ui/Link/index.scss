@@ -1,4 +1,4 @@
-@import '/src/styles/variables.scss';
+@import '/src/styles';
 .link {
     color: $blue;
     font-size: 13px;
@@ -6,7 +6,7 @@
     cursor: pointer;
     display: initial;
     margin: auto auto;
-    &.red {
+    &[data-color="red"] {
         color: $red;
     }
 }

@@ -1,4 +1,4 @@
-@import '/src/styles/variables.scss';
+@import '/src/styles';
 .profilePage {
     height: 100%;
     display: flex;
@@ -8,9 +8,8 @@
     }
     &__changeAvatar,
     &__avatar {
+        @extend %centerBlock;
         width: 130px;
-        display: flex;
-        justify-content: center;
         margin: 0 auto 60px;
     }
     &__avatar {
