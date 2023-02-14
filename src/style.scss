@@ -1,0 +1,38 @@
+@import "./pages";
+@import "./styles";
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "Inter", sans-serif;
+}
+
+#root {
+    color: $black;
+    height: 100vh;
+}
+
+.container {
+    @extend %centeringBlock;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 13px;
+}

@@ -1,0 +1,16 @@
+.profilePassword {
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        *:last-child {
+            border-bottom: none;
+        }
+        margin-bottom: 162px;
+        margin-top: 97px;
+    }
+    &__saveButton {
+        width: 280px;
+        margin: 0 auto;
+    }
+}
