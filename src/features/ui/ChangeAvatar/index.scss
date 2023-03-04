@@ -1,12 +1,16 @@
 @import '/src/styles';
+
 .changeAvatar {
     @extend %centerBlock;
+
     flex-direction: column;
     gap: 21;
     font-weight: 600;
+
     .avatar {
         &::after {
             @extend %centerBlock;
+
             content: "Поменять аватар";
             color: $white;
             text-align: center;
@@ -20,36 +24,44 @@
             visibility: hidden;
             opacity: 0;
         }
+
         &:hover::after {
             transition: 0.4s;
             visibility: visible;
             opacity: 1;
         }
     }
+
     &__avatar {
         width: 130px;
         height: 130px;
     }
+
     &__content {
         @extend %centerBlock;
+
         flex-direction: column;
         gap: 46px;
-        &__label {
-            color: $blue;
-            text-decoration-line: underline;
-            font-size: 14px;
-            cursor: pointer;
-            width: 125px;
-            text-align: center;
-            line-height: 16px;
-        }
+
         &__input {
             opacity: 0;
             visibility: hidden;
             position: absolute;
+
+            &__label {
+                color: $blue;
+                text-decoration-line: underline;
+                font-size: 14px;
+                cursor: pointer;
+                width: 125px;
+                text-align: center;
+                line-height: 16px;
+            }
         }
+
         &__saveButton {
             @extend %centerBlock;
+
             width: 100%;
             flex-direction: column;
             gap: 14px;

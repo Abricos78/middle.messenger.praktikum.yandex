@@ -1,15 +1,17 @@
 @import "src/styles";
+
 .error {
     color: $red;
     display: none;
+    position: absolute;
     font-size: 12px;
+
     &[data-size="m"] {
         font-size: 16px;
     }
+
     &[data-size="l"] {
         font-size: 20px;
     }
-    &.active {
-        display: inline;
-    }
+
 }

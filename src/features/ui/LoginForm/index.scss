@@ -1,17 +1,21 @@
 @import '/src/styles';
+
 .login {
     &__title {
         margin-bottom: 40px;
         text-align: center;
     }
+
     &__inputs {
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin-bottom: 139px;
     }
+
     &__footer {
         @extend %centerBlock;
+
         flex-direction: column;
         gap: 14px;
     }

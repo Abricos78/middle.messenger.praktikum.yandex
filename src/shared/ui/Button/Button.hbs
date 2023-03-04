@@ -3,7 +3,7 @@
         <img src="{{src}}" alt="arrow" />
     </button>
 {{else}}
-    <button class="button" data-type="default">
+    <button class="button" type="{{#if type}}{{type}}{{else}}button{{/if}}" data-type="{{#if buttonType}}{{buttonType}}{{else}}default{{/if}}">
         {{content}}
     </button>
 {{/if}}

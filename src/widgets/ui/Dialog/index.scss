@@ -3,7 +3,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+
     &__content {
         flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 30px;
     }
 }

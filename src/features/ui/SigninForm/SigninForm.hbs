@@ -1,17 +1,12 @@
 <form>
     <h2 class="signin__title">Вход</h2>
     <div class="signin__inputs">
-        {{>Input name="email" label="Почта" placeholder="Почта" errorMessage="Заполните поле" type="email"}}
-        {{>Input name="login" label="Логин" placeholder="Логин" errorMessage="Заполните поле" type="text"}}
-        {{>Input name="first_name" label="Имя" placeholder="Имя" errorMessage="Заполните поле" type="text"}}
-        {{>Input name="second_name" label="Фамилия" placeholder="Фамилия" errorMessage="Заполните поле" type="text"}}
-        {{>Input name="phone" label="Телефон" placeholder="Телефон" errorMessage="Заполните поле" type="tel"}}
-        {{>Input name="password" label="Пароль" placeholder="Пароль" errorMessage="Заполните поле" type="password"}}
-        {{>Input name="check_password" label="Пароль (ещё раз)" placeholder="Пароль" errorMessage="Пароли не совпадают"
-        type="password"}}
+        {{#each Inputs}}
+            {{{this}}}
+        {{/each}}
     </div>
     <div class="signin__footer">
-        {{>Button content="Зарегистрироваться"}}
-        {{>Link content="Войти" }}
+        {{{SignButton}}}
+        {{{Link}}}
     </div>
 </form>

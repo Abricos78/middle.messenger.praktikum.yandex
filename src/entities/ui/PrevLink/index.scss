@@ -1,6 +1,12 @@
 @import '/src/styles';
+
 .prevLink {
     width: 64px;
     background: #fbfbfb;
     border-right: 1px solid $light-grey;
+
+    &__button {
+        width: 28px;
+        height: 28px;
+    }
 }

@@ -1,11 +1,13 @@
 @import '/src/styles';
+
 .link {
     color: $blue;
     font-size: 13px;
     text-decoration: none;
     cursor: pointer;
     display: initial;
-    margin: auto auto;
+    margin: auto;
+
     &[data-color="red"] {
         color: $red;
     }
