@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/entities/ui/Avatar/index.ts"],"names":[],"mappings":";;;;;AAAA,yEAAgD;AAChD,8DAAmC;AACnC,wBAAqB;AAOrB,MAAM,MAAO,SAAQ,eAAK;IACtB,YAAY,QAAqB,EAAE;QAC/B,KAAK,CAAC,KAAK,CAAC,CAAA;IAChB,CAAC;IAED,MAAM;QACF,OAAO,IAAI,CAAC,OAAO,CAAC,oBAAQ,EAAE,IAAI,CAAC,KAAK,CAAC,CAAA;IAC7C,CAAC;CACJ;AAED,kBAAe,MAAM,CAAA"}

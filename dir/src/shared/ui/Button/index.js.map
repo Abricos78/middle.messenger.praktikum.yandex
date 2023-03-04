@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/shared/ui/Button/index.ts"],"names":[],"mappings":";;;;;AAAA,+DAAsC;AACtC,8DAAmC;AACnC,wBAAqB;AAUrB,MAAM,MAAO,SAAQ,eAAK;IACtB,YAAY,KAAkB;QAC1B,KAAK,CAAC,KAAK,CAAC,CAAA;IAChB,CAAC;IAED,MAAM;QACF,OAAO,IAAI,CAAC,OAAO,CAAC,oBAAQ,EAAE,IAAI,CAAC,KAAK,CAAC,CAAA;IAC7C,CAAC;CACJ;AAED,kBAAe,MAAM,CAAA"}
