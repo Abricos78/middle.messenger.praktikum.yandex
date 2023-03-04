@@ -3,13 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Block_1 = __importDefault(require("../../../shared/common/Block"));
+const Form_1 = __importDefault(require("../../../shared/common/Form"));
 const SigninForm_hbs_1 = __importDefault(require("./SigninForm.hbs"));
 require("./index.scss");
 const Button_1 = __importDefault(require("../../../shared/ui/Button"));
 const Link_1 = __importDefault(require("../../../shared/ui/Link"));
 const Input_1 = require("../../../shared/ui/Input");
-class SigninForm extends Block_1.default {
+class SigninForm extends Form_1.default {
     constructor() {
         const data = [
             {
@@ -71,13 +71,6 @@ class SigninForm extends Block_1.default {
             Link: new Link_1.default({
                 content: 'Войти'
             }),
-            events: {
-                submit: (e) => {
-                    e.preventDefault();
-                    const formNode = this.element;
-                    console.log(new FormData(formNode));
-                }
-            }
         });
     }
     render() {

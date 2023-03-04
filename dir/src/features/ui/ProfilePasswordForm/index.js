@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Block_1 = __importDefault(require("../../../shared/common/Block"));
+const Form_1 = __importDefault(require("../../../shared/common/Form"));
 const ProfilePasswordForm_hbs_1 = __importDefault(require("./ProfilePasswordForm.hbs"));
 require("./index.scss");
 const Button_1 = __importDefault(require("../../../shared/ui/Button"));
 const Input_1 = require("../../../shared/ui/Input");
-class ProfilePasswordForm extends Block_1.default {
+class ProfilePasswordForm extends Form_1.default {
     constructor() {
         const data = [
             {
@@ -36,7 +36,8 @@ class ProfilePasswordForm extends Block_1.default {
         super({
             Inputs: data.map((input) => new Input_1.InfoInput(input)),
             SaveButton: new Button_1.default({
-                content: 'Сохранить'
+                content: 'Сохранить',
+                type: 'submit',
             })
         });
     }

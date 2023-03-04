@@ -8,7 +8,6 @@ const utils_1 = require("../../utils");
 const Input_hbs_1 = __importDefault(require("./Input.hbs"));
 class Input extends Block_1.default {
     constructor(props) {
-        console.log(props);
         super(Object.assign(Object.assign({}, props), { events: {
                 focusout: () => {
                     console.log('focusout');
@@ -21,7 +20,6 @@ class Input extends Block_1.default {
     }
     validation() {
         const message = (0, utils_1.validation)(this.element.value, this.props.validationType);
-        console.log(message);
         const ErrorMessage = this.children.ErrorMessage;
         if (message) {
             ErrorMessage.setProps({

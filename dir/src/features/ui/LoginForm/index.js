@@ -24,7 +24,7 @@ class LoginForm extends Form_1.default {
                 label: 'Пароль',
                 placeholder: 'Пароль',
                 type: 'password',
-                validationType: 'password'
+                validationType: 'PASSWORD'
             },
         ];
         super({
@@ -36,12 +36,6 @@ class LoginForm extends Form_1.default {
             Link: new Link_1.default({
                 content: 'Нет аккаунта?'
             }),
-            events: {
-                submit: (e) => {
-                    e.preventDefault();
-                    this.submit();
-                }
-            }
         });
     }
     render() {
