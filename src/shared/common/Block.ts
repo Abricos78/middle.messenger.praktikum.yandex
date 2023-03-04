@@ -152,7 +152,7 @@ class Block {
 
     #removeEvents(): void {
         Object.entries(this.#eventBus.listeners).forEach(([key, callbacks]) => {
-            callbacks.forEach((fn) => { this.#eventBus.off(key, fn) })
+            callbacks.forEach((fn) => { this.#element.removeEventListener(key, fn) })
         })
     }
 
