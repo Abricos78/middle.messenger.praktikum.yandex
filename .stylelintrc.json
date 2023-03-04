@@ -8,6 +8,6 @@
     ],
     "rules": {
         "selector-class-pattern": null,
-        "scss/percent-placeholder-pattern": "no"
+        "scss/percent-placeholder-pattern": null
     }
 }
