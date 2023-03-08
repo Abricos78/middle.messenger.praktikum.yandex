@@ -1,15 +1,17 @@
-@import "src/styles/variables.scss";
+@import "src/styles";
+
 .error {
     color: $red;
     display: none;
+    position: absolute;
     font-size: 12px;
-    &.m {
+
+    &[data-size="m"] {
         font-size: 16px;
     }
-    &.l {
+
+    &[data-size="l"] {
         font-size: 20px;
     }
-    &.active {
-        display: inline;
-    }
+
 }

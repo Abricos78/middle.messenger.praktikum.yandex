@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/shared/ui/ErrorMessage/index.ts"],"names":[],"mappings":";;;;;AAAA,+DAAsC;AACtC,0EAAyC;AACzC,wBAAqB;AAOrB,MAAM,YAAa,SAAQ,eAAK;IAC5B,YAAY,KAAyB;QACjC,KAAK,CAAC,KAAK,CAAC,CAAA;IAChB,CAAC;IAED,MAAM;QACF,OAAO,IAAI,CAAC,OAAO,CAAC,0BAAQ,EAAE,IAAI,CAAC,KAAK,CAAC,CAAA;IAC7C,CAAC;CACJ;AAED,kBAAe,YAAY,CAAA"}

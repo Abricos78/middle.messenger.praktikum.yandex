@@ -1,12 +1,14 @@
-@import '/src/styles/variables.scss';
+@import '/src/styles';
+
 .link {
     color: $blue;
     font-size: 13px;
     text-decoration: none;
     cursor: pointer;
     display: initial;
-    margin: auto auto;
-    &.red {
+    margin: auto;
+
+    &[data-color="red"] {
         color: $red;
     }
 }

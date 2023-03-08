@@ -1,0 +1,23 @@
+{
+  "include": ["src/"],
+  "files": ["global.d.ts"],
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["ES2017", "DOM"],
+    "module": "CommonJS",
+    "rootDir": "./",
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types"],
+    "sourceMap": true,
+    "outDir": "dir",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true
+  }
+}

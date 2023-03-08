@@ -1,11 +1,12 @@
 <form>
     <h2 class="login__title">Вход</h2>
     <div class="login__inputs">
-        {{>Input name="login" label="Логин" placeholder="Логин" errorMessage="Неверный логин" type="text"}}
-        {{>Input name="password" label="Пароль" placeholder="Пароль" errorMessage="Неверный пароль" type="password"}}
+        {{#each Inputs}}
+            {{{this}}}
+        {{/each}}
     </div>
     <div class="login__footer">
-        {{>Button content="Авторизоваться"}}
-        {{>Link content="Нет аккаунта?" }}
+        {{{AuthButton}}}
+        {{{Link}}}
     </div>
 </form>
