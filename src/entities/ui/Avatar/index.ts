@@ -3,13 +3,24 @@ import template from './Avatar.hbs'
 import './index.scss'
 
 interface AvatarProps {
-    src?: string
+    defaultSrc?: string
+    avatarPath?: string | null
     events?: Record<string, (e: Event) => void>
 }
 
 class Avatar extends Block {
+    avatarPath?: string
+
     constructor(props: AvatarProps = {}) {
-        super(props)
+        const {
+            defaultSrc,
+            avatarPath,
+        } = props
+
+        super({
+            ...props,
+            src: avatarPath ? `https://ya-praktikum.tech/api/v2/resources${avatarPath}` : defaultSrc
+        })
     }
 
     render(): DocumentFragment {

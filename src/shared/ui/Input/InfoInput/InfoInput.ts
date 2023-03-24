@@ -5,7 +5,7 @@ import template from './InfoInput.hbs'
 
 class InfoInput extends Block {
     constructor(props: InputProps) {
-        const { label, name, type, placeholder, value } = props
+        const { label, name, type, placeholder, value, isNeedValue } = props
         const Error = new ErrorMessage()
         super({
             label,
@@ -15,6 +15,7 @@ class InfoInput extends Block {
                 type,
                 placeholder,
                 value,
+                isNeedValue,
                 ErrorMessage: Error
             }),
             ErrorMessage: Error

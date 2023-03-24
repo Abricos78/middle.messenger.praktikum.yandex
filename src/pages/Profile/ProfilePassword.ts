@@ -1,6 +1,6 @@
 import Avatar from '../../entities/ui/Avatar'
 import PrevLink from '../../entities/ui/PrevLink'
-import ProfilePasswordForm from '../../features/ui/ProfilePasswordForm'
+import ProfilePasswordForm from '../../features/ui/ProfilePasswordForm/ui'
 import Block from '../../shared/common/Block'
 import template from './ProfilePassword.hbs'
 

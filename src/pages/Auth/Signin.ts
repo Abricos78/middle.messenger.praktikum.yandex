@@ -1,6 +1,6 @@
 import Block from '../../shared/common/Block'
 import template from './Signin.hbs'
-import SigninForm from '../../features/ui/SigninForm'
+import SigninForm from '../../features/ui/SignupForm'
 
 class Signin extends Block {
     constructor() {

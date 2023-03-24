@@ -8,7 +8,7 @@ class Chats extends Block {
     constructor() {
         super({
             SearchChat: new SearchChat(),
-            ChatList: new ChatList()
+            ChatList: new ChatList(),
         })
     }
 

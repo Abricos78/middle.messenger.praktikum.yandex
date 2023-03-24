@@ -1,4 +1,5 @@
 import Block from '../../shared/common/Block'
+import Router from '../../shared/Router'
 import Link from '../../shared/ui/Link'
 import template from './Error.hbs'
 
@@ -12,7 +13,7 @@ class Error505 extends Block {
                 events: {
                     click: (e: Event) => {
                         e.preventDefault()
-                        console.log('Hello 505')
+                        Router.go('/')
                     }
                 }
             })

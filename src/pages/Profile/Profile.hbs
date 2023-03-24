@@ -5,12 +5,9 @@
             {{{ChangeAvatar}}}
         </div>
         <div class="profilePage__infoFields">
-            {{{EmailInfo}}}
-            {{{LoginInfo}}}
-            {{{FirstNameInfo}}}
-            {{{SecondNameInfo}}}
-            {{{NicknameInfo}}}
-            {{{PhoneInfo}}}
+            {{#each InfoFields}}
+                {{{this}}}
+            {{/each}}
         </div>
         <div class="profilePage__links">
             <div>

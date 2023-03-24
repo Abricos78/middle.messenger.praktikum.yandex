@@ -5,7 +5,7 @@ import template from './CommonInput.hbs'
 
 class CommonInput extends Block {
     constructor(props: InputProps) {
-        const { label, name, placeholder, type, value, validationType } = props
+        const { label, name, placeholder, type, value, validationType, isNeedValue } = props
         const Error = new ErrorMessage()
         super({
             label,
@@ -16,6 +16,7 @@ class CommonInput extends Block {
                 type,
                 value,
                 validationType,
+                isNeedValue,
                 ErrorMessage: Error,
             }),
             ErrorMessage: Error,

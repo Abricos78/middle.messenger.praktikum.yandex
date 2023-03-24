@@ -11,17 +11,12 @@ enum EVENTS {
 type ObjectType<T> = Record<string, T>
 type UnknownObject = ObjectType<unknown>
 
-// interface Meta {
-//     props: UnknownObject
-// }
-
 interface ChildrenAndProps {
     props: UnknownObject
     children: ObjectType<Block | Block[]>
 }
 
 class Block {
-    // #meta: Meta
     #element: HTMLElement
     #eventBus: EventBus
     props: UnknownObject
@@ -31,9 +26,6 @@ class Block {
     constructor (propsWithChildren = {}) {
         this.#eventBus = new EventBus()
         const { props, children } = this.#getChildrenAndProps(propsWithChildren)
-        // this.#meta = {
-        //     props,
-        // }
         this.children = children
         this.props = this.#makePropsProxy(props)
         this.#registerEvents(this.#eventBus)
@@ -125,7 +117,7 @@ class Block {
 
     // Может переопределяется
     render(): DocumentFragment {
-        return document.createElement('template').content
+        return document.createDocumentFragment()
     }
 
     // Может переопределяется
@@ -177,8 +169,8 @@ class Block {
         })
     }
 
-    show(displayType = 'block'): void {
-        this.#element.style.display = displayType
+    show(): void {
+        this.#element.style.display = 'block'
     }
 
     hide(): void {
