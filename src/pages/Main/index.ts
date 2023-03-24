@@ -12,6 +12,10 @@ class Main extends Block {
         })
     }
 
+    show(): void {
+        this.element.style.display = 'flex'
+    }
+
     render(): DocumentFragment {
         return this.compile(template, this.props)
     }

@@ -1,15 +1,17 @@
 import Avatar from '../../entities/ui/Avatar'
 import PrevLink from '../../entities/ui/PrevLink'
-import ProfileDataForm from '../../features/ui/ProfileDataForm'
+import ProfileDataForm from '../../features/ui/ProfileDataForm/ui'
 import Block from '../../shared/common/Block'
+import { withStore } from '../../shared/Store'
+import { type User } from '../../shared/types'
 import template from './ProfileData.hbs'
 
 class ProfileData extends Block {
-    constructor() {
+    constructor(userDate: User) {
         super({
             PrevLink: new PrevLink(),
             Avatar: new Avatar(),
-            ProfileDataForm: new ProfileDataForm(),
+            ProfileDataForm: new ProfileDataForm(userDate),
         })
     }
 
@@ -18,4 +20,4 @@ class ProfileData extends Block {
     }
 }
 
-export default ProfileData
+export default withStore((state) => state.user ?? {})(ProfileData)

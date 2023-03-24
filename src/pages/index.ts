@@ -1,6 +1,7 @@
 import {
     Error404,
     Error505,
+    NotFoundPage,
 } from './Error'
 import {
     LoginPage,
@@ -22,4 +23,5 @@ export {
     ProfilePage,
     ProfileDataPage,
     ProfilePasswordPage,
+    NotFoundPage,
 }

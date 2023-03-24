@@ -3,7 +3,7 @@
   "files": ["global.d.ts"],
   "compilerOptions": {
     "target": "es2016",
-    "lib": ["ES2017", "DOM"],
+    "lib": ["es2022", "DOM"],
     "module": "CommonJS",
     "rootDir": "./",
     "moduleResolution": "node",

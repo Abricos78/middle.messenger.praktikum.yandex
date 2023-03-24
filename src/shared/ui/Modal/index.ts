@@ -15,13 +15,18 @@ class Modal extends Block {
                 click: (e: Event) => {
                     const node = e.target as HTMLElement
                     if (node.classList.contains('modal')) this.hide()
-                }
+                },
+                ...props.events
             }
         })
     }
 
     render(): DocumentFragment {
         return this.compile(template, this.props)
+    }
+
+    show(): void {
+        this.element.style.display = 'flex'
     }
 }
 
