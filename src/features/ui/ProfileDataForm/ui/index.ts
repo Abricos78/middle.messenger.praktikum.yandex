@@ -64,6 +64,7 @@ class ProfileDataForm extends Form {
     async onSubmit(): Promise<void> {
         try {
             const { data, hasError } = this.getFormData<ProfileDataType>()
+            console.log(data, hasError)
             if (hasError) return
             await ProfileDataControllerInstance.changeProfile(data)
         } catch (e) {
