@@ -7,11 +7,11 @@ import { type User } from '../../shared/types'
 import template from './ProfileData.hbs'
 
 class ProfileData extends Block {
-    constructor(userDate: User) {
+    constructor(userData: User) {
         super({
             PrevLink: new PrevLink(),
             Avatar: new Avatar(),
-            ProfileDataForm: new ProfileDataForm(userDate),
+            ProfileDataForm: new ProfileDataForm(userData),
         })
     }
 
