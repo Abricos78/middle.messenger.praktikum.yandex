@@ -5,18 +5,14 @@ import template from './CommonInput.hbs'
 
 class CommonInput extends Block {
     constructor(props: InputProps) {
-        const { label, name, placeholder, type, value, validationType } = props
+        const { label, ...rest } = props
         const Error = new ErrorMessage()
         super({
             label,
             Input: new Input({
                 class: 'input',
-                name,
-                placeholder,
-                type,
-                value,
-                validationType,
                 ErrorMessage: Error,
+                ...rest
             }),
             ErrorMessage: Error,
         })

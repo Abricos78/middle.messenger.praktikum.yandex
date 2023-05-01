@@ -7,8 +7,9 @@ export interface InputProps {
     placeholder?: string
     type?: string
     label?: string
-    value?: string
+    value?: string | number
     validationType?: string
+    isNeedValue?: boolean
 }
 
 interface Props extends InputProps {
@@ -24,12 +25,8 @@ class Input extends Block {
             ...props,
             events: {
                 focusout: () => {
-                    console.log('focusout')
                     this.validation()
                 },
-                focusin: () => {
-                    console.log('focusin')
-                }
             }
         })
     }

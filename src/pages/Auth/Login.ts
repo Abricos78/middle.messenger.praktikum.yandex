@@ -1,6 +1,6 @@
 import Block from '../../shared/common/Block'
 import template from './Login.hbs'
-import LoginForm from '../../features/ui/LoginForm'
+import LoginForm from '../../features/ui/LoginForm/ui'
 
 class Login extends Block {
     constructor() {

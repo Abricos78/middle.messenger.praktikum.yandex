@@ -1,0 +1,96 @@
+@import '/src/styles';
+
+.chatList {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+
+    &__newChat {
+        margin-top: 20px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+        display: none;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none;
+        border-radius: 20px;
+        background: transparent;
+
+    }
+}
+
+.chatItem {
+    height: 71px;
+    border-bottom: 1px solid $light-grey;
+    display: flex;
+    padding: 12px 0;
+    cursor: pointer;
+
+    &__avatar {
+        width: 47px;
+        height: 47px;
+        margin-right: 10px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-right: 15px;
+        flex-grow: 1;
+
+        h4 {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            max-width: 193px;
+            max-height: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: $grey;
+            font-size: 13px;
+        }
+    }
+
+    &__info {
+        @extend %centerBlock;
+
+        flex-direction: column;
+        gap: 14px;
+
+        p {
+            font-size: 10px;
+            color: $grey;
+        }
+
+        &__button {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.createChart {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    div {
+        margin-bottom: 33px;
+    }
+}

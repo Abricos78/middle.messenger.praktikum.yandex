@@ -1,0 +1,11 @@
+<div class="chatList">
+    {{#if ChatsItem}}
+        {{#each ChatsItem}}
+            {{{this}}}
+        {{/each}}
+    {{/if}}
+    <div class="chatList__newChat">
+        {{{Button}}}
+    </div>
+    {{{Modal}}}
+</div>

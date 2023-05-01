@@ -3,8 +3,8 @@ import template from './Button.hbs'
 import './index.scss'
 
 interface ButtonProps {
-    content?: string
-    events?: Record<string, () => void>
+    content?: string | number
+    events?: Record<string, (e: Event) => void>
     type?: string
     buttonType?: string
     src?: string

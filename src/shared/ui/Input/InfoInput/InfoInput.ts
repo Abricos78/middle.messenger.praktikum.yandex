@@ -5,17 +5,14 @@ import template from './InfoInput.hbs'
 
 class InfoInput extends Block {
     constructor(props: InputProps) {
-        const { label, name, type, placeholder, value } = props
+        const { label, ...rest } = props
         const Error = new ErrorMessage()
         super({
             label,
             Input: new Input({
                 class: 'infoField__value',
-                name,
-                type,
-                placeholder,
-                value,
-                ErrorMessage: Error
+                ErrorMessage: Error,
+                ...rest
             }),
             ErrorMessage: Error
         })

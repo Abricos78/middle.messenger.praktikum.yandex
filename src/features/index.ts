@@ -1,5 +1,5 @@
 import './ui/LoginForm'
-import './ui/SigninForm'
+import './ui/SignupForm'
 import './ui/ChangeAvatar'
 import './ui/ProfileDataForm'
 import './ui/ProfilePasswordForm'

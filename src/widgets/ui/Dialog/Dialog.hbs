@@ -1,10 +1,15 @@
 <section class="dialog">
-    {{{DialogHeader}}}
-    <div class="dialog__content">
-        {{{IncomeMessage}}}
-        {{{IncomeMessage1}}}
-        {{{IncomeMessage2}}}
-
-    </div>
-    {{{SendMessage}}}
+    {{#if currentChat}}
+        {{{DialogHeader}}}
+        <div class="dialog__content">
+            {{#if Messages}}
+                {{#each Messages}}
+                    {{{this}}}
+                {{/each}}
+            {{/if}}
+        </div>
+        {{{SendMessage}}}
+    {{else}} 
+        <h2>Чат не выбран</h2>
+    {{/if}}
 </section>
