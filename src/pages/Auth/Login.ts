@@ -5,7 +5,7 @@ import LoginForm from '../../features/ui/LoginForm/ui'
 class Login extends Block {
     constructor() {
         super({
-            LoginForm: new LoginForm()
+            LoginForm: new LoginForm(),
         })
     }
 

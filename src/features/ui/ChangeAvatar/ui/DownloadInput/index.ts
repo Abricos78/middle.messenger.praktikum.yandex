@@ -1,5 +1,5 @@
-import Block from '../../../../shared/common/Block'
-import template from './DownloadInput.hbs'
+import Block from '../../../../../shared/common/Block'
+import template from './template.hbs'
 
 class DownloadInput extends Block {
     render(): DocumentFragment {

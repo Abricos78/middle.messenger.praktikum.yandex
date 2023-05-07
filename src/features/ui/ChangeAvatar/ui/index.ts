@@ -1,8 +1,8 @@
 import Avatar from '../../../../entities/ui/Avatar'
 import Block from '../../../../shared/common/Block'
-import template from './ChangeAvatar.hbs'
+import template from './template.hbs'
 import './index.scss'
-import AvatarIcon from '../../../../../static/icons/Avatar.svg'
+import AvatarIcon from '/static/icons/Avatar.svg'
 import ChangeAvatarModal from './ChangeAvatarModal'
 import Modal from '../../../../shared/ui/Modal'
 

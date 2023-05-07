@@ -1,8 +1,8 @@
-import template from './ChangeAvatarModal.hbs'
-import Button from '../../../../shared/ui/Button'
-import DownloadInput from './DownloadInput'
-import Block from '../../../../shared/common/Block'
-import ChangeAvatarControllerInstance from '../controller'
+import template from './template.hbs'
+import Button from '../../../../../shared/ui/Button'
+import DownloadInput from '../DownloadInput'
+import Block from '../../../../../shared/common/Block'
+import ChangeAvatarControllerInstance from '../../controller'
 
 class ChangeAvatarModal extends Block {
     constructor() {
