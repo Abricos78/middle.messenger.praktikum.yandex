@@ -6,7 +6,7 @@
     "scripts": {
         "start": "npm run build && node server.js",
         "eslint": "npx eslint src/**",
-        "stylelint": "npx stylelint src/** --fix",
+        "stylelint": "npx stylelint src/**",
         "dev": "webpack serve --env mode=development --env port=3000",
         "build:dev": "webpack --env mode=development",
         "build:prod": "webpack --env mode=production"
@@ -14,6 +14,11 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Abricos78/middle.messenger.praktikum.yandex.git"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "echo '[Husky] pre-commit'"
+        }
     },
     "keywords": [],
     "author": "",
@@ -39,6 +44,7 @@
         "handlebars": "4.7.7",
         "handlebars-loader": "1.7.3",
         "html-webpack-plugin": "5.5.1",
+        "husky": "8.0.3",
         "sass": "1.62.1",
         "sass-loader": "13.2.2",
         "style-loader": "3.3.2",
