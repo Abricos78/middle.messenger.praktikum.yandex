@@ -1,6 +1,6 @@
 import template from './SendMessage.hbs'
 import './index.scss'
-import ArrowRight from '../../../../../static/icons/ArrowRight.svg'
+import ArrowRight from '/static/icons/ArrowRight.svg'
 import Button from '../../../../shared/ui/Button'
 import MessageInput from './MessageInput'
 import Block from '../../../../shared/common/Block'

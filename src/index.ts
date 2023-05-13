@@ -4,14 +4,15 @@ import './entities'
 import './widgets'
 import {
     LoginPage,
+    SigninPage,
     MainPage,
     NotFoundPage,
     ProfileDataPage,
     ProfilePage,
     ProfilePasswordPage,
-    SigninPage,
 } from './pages'
 import Router from './shared/Router'
+import './style'
 import controller from './shared/controller'
 
 enum ROUTES {
@@ -26,9 +27,9 @@ enum ROUTES {
 
 window.addEventListener('DOMContentLoaded', async (): Promise<void> => {
     Router
-        .use(ROUTES.MAIN, MainPage)
         .use(ROUTES.AUTH, LoginPage)
         .use(ROUTES.SIGNUP, SigninPage)
+        .use(ROUTES.MAIN, MainPage)
         .use(ROUTES.PROFILE, ProfilePage)
         .use(ROUTES.PROFILE_DATA, ProfileDataPage)
         .use(ROUTES.PROFILE_PASSWORD, ProfilePasswordPage)
@@ -45,7 +46,7 @@ window.addEventListener('DOMContentLoaded', async (): Promise<void> => {
     try {
         await controller.getUserInfo()
         Router.start()
-        if (authRoutes) Router.go('/')
+        if (authRoutes) Router.go(ROUTES.MAIN)
     } catch (e) {
         Router.start()
 

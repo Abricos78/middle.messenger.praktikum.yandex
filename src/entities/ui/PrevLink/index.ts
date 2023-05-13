@@ -2,7 +2,7 @@ import Block from '../../../shared/common/Block'
 import template from './PrevLink.hbs'
 import './index.scss'
 import Button from '../../../shared/ui/Button'
-import ArrowLeft from '../../../../static/icons/ArrowLeft.svg'
+import ArrowLeft from '/static/icons/ArrowLeft.svg'
 import Router from '../../../shared/Router'
 
 class PrevLink extends Block {

@@ -1,4 +1,4 @@
-# [Web-messenger](https://warm-begonia-218020.netlify.app) - sprint 2
+# [Web-messenger](https://warm-begonia-218020.netlify.app) - sprint 3
 Web-messenger - практический проект, в котором я реализую схожий функционал с такими сервисами как Telegram, WhatsApp.
 ## Основные технологии и подходы которые я использую
 * Typescript
@@ -7,6 +7,7 @@ Web-messenger - практический проект, в котором я ре
 * SCSS
 * Parcel
 * EventBus
+* WebSocket
 ## Основные команды
 - `npm run dev` - локальная разработка проекта
 - `npm run build` - сборка проекта
@@ -15,4 +16,4 @@ Web-messenger - практический проект, в котором я ре
 - `npm run stylelint` - проверка и автофикс scss файлов проекта
 ## Исходники
 * [Макет в Figma](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=u7Mr63IAjzLMX2lm-0)
-### [Pull Request](https://github.com/Abricos78/middle.messenger.praktikum.yandex/pull/11)
+### [Pull Request](https://github.com/Abricos78/middle.messenger.praktikum.yandex/pull/14)

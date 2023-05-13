@@ -1,5 +1,5 @@
-import Block from '../../../../shared/common/Block'
-import template from './DialogPopover.hbs'
+import Block from '../../../../../shared/common/Block'
+import template from './template.hbs'
 
 class DialogPopover extends Block {
     render(): DocumentFragment {
