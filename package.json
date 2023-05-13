@@ -4,7 +4,7 @@
     "description": "---",
     "source": "static/index.html",
     "scripts": {
-        "start": "npm run build:prod && node server.js",
+        "start": "npm run build:prod && node --max-old-space-size=4096 server.js",
         "eslint": "npx eslint src/**",
         "stylelint": "npx stylelint src/**",
         "dev": "webpack serve --env mode=development --env port=3000",
