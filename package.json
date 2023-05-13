@@ -4,11 +4,13 @@
     "description": "---",
     "source": "static/index.html",
     "scripts": {
+        "start": "npm run build:prod && node server.js",
         "eslint": "npx eslint src/**",
         "stylelint": "npx stylelint src/**",
         "dev": "webpack serve --env mode=development --env port=3000",
         "build:dev": "webpack --env mode=development",
-        "build:prod": "webpack --env mode=production"
+        "build:prod": "webpack --env mode=production",
+        "test": "mocha --require ./mochaSetup.js"
     },
     "repository": {
         "type": "git",
@@ -22,12 +24,15 @@
     },
     "homepage": "https://github.com/Abricos78/middle.messenger.praktikum.yandex#readme",
     "devDependencies": {
+        "@types/chai": "4.3.5",
         "@types/handlebars": "4.1.0",
+        "@types/mocha": "10.0.1",
         "@types/node": "18.16.3",
         "@types/webpack": "5.28.1",
         "@types/webpack-dev-server": "4.7.2",
         "@typescript-eslint/eslint-plugin": "5.52.0",
         "@typescript-eslint/parser": "5.52.0",
+        "chai": "4.3.7",
         "css-loader": "6.7.3",
         "eslint": "8.34.0",
         "eslint-config-standard-with-typescript": "34.0.0",
@@ -39,6 +44,8 @@
         "handlebars-loader": "1.7.3",
         "html-webpack-plugin": "5.5.1",
         "husky": "8.0.3",
+        "jsdom": "22.0.0",
+        "mocha": "10.2.0",
         "sass": "1.62.1",
         "sass-loader": "13.2.2",
         "style-loader": "3.3.2",
