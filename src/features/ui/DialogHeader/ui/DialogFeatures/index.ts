@@ -68,6 +68,9 @@ class DialogFeatures extends Block {
                 break
             case 'remove':
                 this.removeUserModal()
+                break
+            case 'removeChat':
+                DialogFeaturesControllerInstance.removeChat()
         }
 
         if (!target.classList.contains('dialogHeader__features')) {

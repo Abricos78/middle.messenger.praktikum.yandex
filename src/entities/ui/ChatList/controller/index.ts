@@ -29,7 +29,6 @@ class ChatListController {
     }
 
     async createChat(data: Record<string, unknown>): Promise<void> {
-        console.log('createChat', data)
         try {
             await this.#api.create(data)
             await this.getChats()
