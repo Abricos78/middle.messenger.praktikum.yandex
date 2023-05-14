@@ -32,5 +32,5 @@
         "@typescript-eslint/no-confusing-void-expression": 0,
         "@typescript-eslint/await-thenable": 0
     },
-    "ignorePatterns": ["**.scss", "**.hbs"]
+    "ignorePatterns": ["**.scss", "**.hbs", "**.test.ts"]
 }
