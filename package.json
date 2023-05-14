@@ -10,7 +10,7 @@
         "dev": "webpack serve --env mode=development --env port=3000",
         "build:dev": "webpack --env mode=development",
         "build:prod": "webpack --env mode=production",
-        "test": "mocha --require ./mochaSetup.js"
+        "test": "mocha"
     },
     "repository": {
         "type": "git",
@@ -28,6 +28,7 @@
         "@types/handlebars": "4.1.0",
         "@types/mocha": "10.0.1",
         "@types/node": "18.16.3",
+        "@types/sinon": "10.0.15",
         "@types/webpack": "5.28.1",
         "@types/webpack-dev-server": "4.7.2",
         "@typescript-eslint/eslint-plugin": "5.52.0",
@@ -48,6 +49,7 @@
         "mocha": "10.2.0",
         "sass": "1.62.1",
         "sass-loader": "13.2.2",
+        "sinon": "15.0.4",
         "style-loader": "3.3.2",
         "stylelint": "15.1.0",
         "stylelint-config-standard-scss": "7.0.1",

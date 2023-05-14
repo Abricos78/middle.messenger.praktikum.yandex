@@ -24,6 +24,7 @@ class Router {
     #onRoute(pathname: string): void {
         const route = this.getRoute(pathname) ?? this.#NotFoundRoute
 
+        if (!route) return
         if (this.#currentRoute) this.#currentRoute.leave()
 
         this.#currentRoute = route
