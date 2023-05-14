@@ -14,6 +14,10 @@ class DialogFeaturesApi extends BaseApi {
         return this.http.delete('/chats/users', data)
     }
 
+    removeChat(chatId: Record<string, number>): Promise<unknown> {
+        return this.http.delete('/chats', chatId)
+    }
+
     create = undefined
     read = undefined
     update = undefined

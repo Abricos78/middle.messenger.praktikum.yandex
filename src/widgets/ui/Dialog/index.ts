@@ -14,7 +14,6 @@ class Dialog extends Block {
             SendMessage: new SendMessage(),
             Messages: null,
         })
-        console.log(this)
     }
 
     componentDidMount(): void {
@@ -29,7 +28,6 @@ class Dialog extends Block {
             this.children.Messages = []
             return true
         }
-
         if (this.props.Messages === null) {
             this.children.Messages = currentMessages.map(({ content }) => new IncomeMessage(content))
         } else {

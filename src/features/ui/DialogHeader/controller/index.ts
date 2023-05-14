@@ -30,6 +30,17 @@ class DialogFeaturesController {
     async removeUserFromChat(data: SearchUserData): Promise<void> {
         await this.#api.removeUserFromChat(await this.#formatData(data))
     }
+
+    async removeChat(): Promise<void> {
+        const {
+            currentChat: { id } = { id: null },
+            chats
+        } = store.getState()
+        if (!id) return
+        await this.#api.removeChat({ chatId: id })
+        store.set('currentChat', undefined)
+        store.set('chats', chats?.filter(({ id: chatId }) => chatId !== id))
+    }
 }
 
 const DialogFeaturesControllerInstance = new DialogFeaturesController()

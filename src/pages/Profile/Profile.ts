@@ -22,7 +22,7 @@ class Profile extends Block {
         } = state
         super({
             PrevLink: new PrevLink(),
-            ChangeAvatar: new ChangeAvatar(first_name, avatar),
+            ChangeAvatar: new ChangeAvatar({ first_name, avatar }),
             InfoFields: [
                 new InfoField({
                     label: 'Почта',
