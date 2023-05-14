@@ -25,4 +25,4 @@ Web-messenger - практический проект, в котором я ре
 - npm run test
 ## Исходники
 * [Макет в Figma](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1&t=u7Mr63IAjzLMX2lm-0)
-### [Pull Request](https://github.com/Abricos78/middle.messenger.praktikum.yandex/pull/14)
+### [Pull Request](https://github.com/Abricos78/middle.messenger.praktikum.yandex/pull/23)
