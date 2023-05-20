@@ -2,14 +2,14 @@ import Avatar from '../../../../entities/ui/Avatar'
 import Block from '../../../../shared/common/Block'
 import { withStore } from '../../../../shared/Store'
 import DialogFeatures from './DialogFeatures'
-import template from './DialogHeader.hbs'
+import template from './template.hbs'
 import './index.scss'
 
 class DialogHeader extends Block {
     constructor() {
         super({
             Avatar: new Avatar(),
-            DialogFeatures: new DialogFeatures(),
+            DialogFeaturesTemplate: new DialogFeatures(),
         })
     }
 

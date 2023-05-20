@@ -9,7 +9,7 @@ export enum WSTransportEvents {
 
 class WSocket extends EventBus {
     #socket: WebSocket | null = null
-    #pingInterval: number = 0
+    #pingInterval: NodeJS.Timer | number = 0
 
     constructor(private readonly url: string) {
         super()

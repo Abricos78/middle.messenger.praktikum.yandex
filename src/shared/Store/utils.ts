@@ -20,7 +20,6 @@ function merge(store: ObjectType, newParams: ObjectType): ObjectType {
 
 export function set(state: ObjectType, path: string, value: unknown): void {
     if (typeof state !== 'object' || state === null) return state
-
     const result = path.split('.').reduceRight((acc, key) => ({
         [key]: acc
     }), value)

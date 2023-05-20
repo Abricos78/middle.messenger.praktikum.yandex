@@ -1,6 +1,6 @@
-import Block from '../../../shared/common/Block'
-import Router from '../../../shared/Router'
-import template from './ProfileLink.hbs'
+import Block from '../../../../shared/common/Block'
+import Router from '../../../../shared/Router'
+import template from './template.hbs'
 
 class ProfileLink extends Block {
     constructor() {

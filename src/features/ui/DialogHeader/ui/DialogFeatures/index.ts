@@ -1,11 +1,11 @@
-import Block from '../../../../shared/common/Block'
-import { type State, withStore } from '../../../../shared/Store'
-import Modal from '../../../../shared/ui/Modal'
-import CreateModal from '../../../../shared/ui/Modal/CreateModal'
-import DialogFeaturesControllerInstance from '../controller'
-import { type SearchUserData } from '../types'
-import template from './DialogFeatures.hbs'
-import DialogPopover from './DialogPopover'
+import Block from '../../../../../shared/common/Block'
+import { type State, withStore } from '../../../../../shared/Store'
+import Modal from '../../../../../shared/ui/Modal'
+import CreateModal from '../../../../../shared/ui/Modal/CreateModal'
+import DialogFeaturesControllerInstance from '../../controller'
+import { type SearchUserData } from '../../types'
+import template from './template.hbs'
+import DialogPopover from '../DialogPopover'
 
 class DialogFeatures extends Block {
     #cb: (e: Event) => void
@@ -68,6 +68,9 @@ class DialogFeatures extends Block {
                 break
             case 'remove':
                 this.removeUserModal()
+                break
+            case 'removeChat':
+                DialogFeaturesControllerInstance.removeChat()
         }
 
         if (!target.classList.contains('dialogHeader__features')) {

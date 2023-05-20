@@ -1,18 +1,25 @@
 import Avatar from '../../../../entities/ui/Avatar'
 import Block from '../../../../shared/common/Block'
-import template from './ChangeAvatar.hbs'
+import template from './template.hbs'
 import './index.scss'
-import AvatarIcon from '../../../../../static/icons/Avatar.svg'
+import AvatarIcon from '/static/icons/Avatar.svg'
 import ChangeAvatarModal from './ChangeAvatarModal'
 import Modal from '../../../../shared/ui/Modal'
+import { withStore } from '../../../../shared/Store'
+
+interface ChangeAvatarProps {
+    first_name: string
+    avatar: string
+}
 
 class ChangeAvatar extends Block {
-    constructor(first_name: string, avatarPath: string) {
+    constructor(props: ChangeAvatarProps) {
+        const { first_name, avatar } = props
         super({
             title: first_name,
             Avatar: new Avatar({
                 defaultSrc: AvatarIcon,
-                avatarPath,
+                avatarPath: avatar,
                 events: {
                     click: () => {
                         (this.children.Modal as Block).show()
@@ -20,7 +27,9 @@ class ChangeAvatar extends Block {
                 }
             }),
             Modal: new Modal({
-                Content: new ChangeAvatarModal()
+                Content: new ChangeAvatarModal({
+                    closeModal: () => { (this.children.Modal as Block).hide() },
+                }),
             })
         })
     }
@@ -30,4 +39,4 @@ class ChangeAvatar extends Block {
     }
 }
 
-export default ChangeAvatar
+export default withStore(state => state)(ChangeAvatar)

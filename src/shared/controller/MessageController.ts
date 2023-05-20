@@ -29,6 +29,8 @@ class MessageController {
             throw new Error(`Chat ${chatId} is not connected`)
         }
 
+        if (message.trim() === '') return
+
         socket.send({
             type: 'message',
             content: message,

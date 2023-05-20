@@ -1,11 +1,15 @@
-import template from './ChangeAvatarModal.hbs'
-import Button from '../../../../shared/ui/Button'
-import DownloadInput from './DownloadInput'
-import Block from '../../../../shared/common/Block'
-import ChangeAvatarControllerInstance from '../controller'
+import template from './template.hbs'
+import Button from '../../../../../shared/ui/Button'
+import DownloadInput from '../DownloadInput'
+import Block from '../../../../../shared/common/Block'
+import ChangeAvatarControllerInstance from '../../controller'
+
+interface ChangeAvatarModalProps {
+    closeModal: () => void
+}
 
 class ChangeAvatarModal extends Block {
-    constructor() {
+    constructor({ closeModal }: ChangeAvatarModalProps) {
         super({
             DownloadInput: new DownloadInput(),
             Button: new Button({
@@ -16,6 +20,7 @@ class ChangeAvatarModal extends Block {
                 submit: (e: Event) => {
                     e.preventDefault()
                     this.onSubmit()
+                    closeModal()
                 }
             }
         })

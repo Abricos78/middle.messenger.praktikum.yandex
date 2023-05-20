@@ -5,6 +5,7 @@ import template from './Error.hbs'
 class NotFoundPage extends Block {
     constructor() {
         super({
+            code: 404,
             message: 'Страница не найдена',
             Link: new Link({
                 content: 'Вернуться на главную',
